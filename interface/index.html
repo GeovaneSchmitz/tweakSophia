@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tweak for Sophia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/index.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/igs.css" />
+    <link rel="stylesheet" id='theme-light' type="text/css" media="screen" href="assets/light.css" disabled />
+    <link rel="stylesheet" id='theme-dark' type="text/css" media="screen" href="assets/dark.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/font/font.css" />
+    <script src="assets/index.js"></script>
+    <script src="assets/igs.js"></script>
+</head>
+
+<body>
+    <div id="contend-login" class="igs-card card-login">
+        <div class="logo-login">
+
+        </div>
+        <div class="login">
+            <div class="igs-input">
+                <span>Matrícula</span>
+                <input id="input-user"></input>
+            </div>
+            <div class="igs-input div-input">
+                <span>Senha</span>
+                <input type="password" id="input-pass"></input>
+            </div>
+            <div id="content-advanced" class="content-advanced">
+                <div class="igs-input igs-haveValue">
+                    <span>Endereço</span>
+                    <input id="input-url"></input>
+                </div>
+            </div>
+            <button class="igs-btn-secundary btn-left" id="btn-advanced">Avançado</button>
+            
+            <button class="igs-btn-primary btn-right" id="btn-login">Logar</button>
+            <span class="disclaimer">Versão beta: Os seus dados não estão seguros, nem por parte do IFSC que usa HTTP  ou este app que usa JSON para salvar seus dados. Aceite por sua conta e risco.</span>
+        </div>
+    </div>
+        <div id="content-tweaks" class="content-tweaks content-tweaks-disable">
+        <div class="logo-tweaks">
+        </div>
+        <div id="username" class='username'></div>
+        <div class='tweaks'>
+            <div class="tweak tweak-renewal">
+                <span class="span-switch">Renovar os livros automaticamente</span>
+                <div id="switch-renewal" class="igs-switch"></div>
+                <div id="days-renewal" class="days-renewal">
+                    <span class="span-select">Faltando para a data limite</span>
+                    <div id="select-days" class="select-days igs-select btn-right">
+                        <option class="igs-active" value="10">10 dias</option>
+                        <option value="5">5 dias</option>
+                        <option value="3">3 dias</option>
+                        <option value="1">1 dia</option>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tweak">
+                <span class="span-switch">Iniciar com o computador</span>
+                <div id="switch-autolaunch" class="igs-switch"></div>
+            </div>
+            <div class="tweak">
+                <span class="span-switch">Tema escuro</span>
+                <div id="switch-theme" class="igs-switch"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+.igs-switch{
+    width: 50px;
+    height: 25px;
+    border-radius: 50px;
+    float: right;
+}
+.igs-switch > input{
+    display: none;
+}
+
+.igs-switch-circle{
+width: 25px;
+height: 25px;
+position: absolute;
+border-radius: 100%;
+transition: 0.25s all;
+}
+.igs-switch.igs-active > .igs-switch-circle{
+    margin-left: 25px;
+}

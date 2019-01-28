@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Raleway;
+  font-weight: 600;
+}
+
+.igs-background {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+}
+
+.igs-btn-secundary:focus, .igs-btn-primary:focus {
+  outline: none;
+}
+
+.igs-btn-secundary, .igs-btn-primary {
+  border: none;
+  font-weight: 500;
+  font-size: 14pt;
+  padding: 7px 15px 7px 15px;
+  border-radius: 3px;
+}
+
+div.igs-card {
+  border-radius: 5px;
+  padding: 40px;
+}
+
+div.igs-header.igs-active {
+  position: fixed;
+}
+
+.igs-header {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  width: 100%;
+  transition: 0.25s all;
+  height: 64px;
+  z-index: 2;
+}
+
+div.igs-input > .igs-input-label {
+  font-size: 12pt;
+  position: absolute;
+  line-height: 50px;
+  transition: 0.25s all;
+  margin-left: 2px;
+  text-indent: 5px;
+  z-index: 2;
+}
+
+div.igs-input.igs-focus > .igs-input-label, div.igs-input.igs-haveValue > .igs-input-label {
+  margin-top: 0;
+  line-height: calc(10pt + 10px);
+  font-size: 10pt;
+}
+
+div.igs-input > line {
+  height: 100%;
+  width: 0;
+  margin-left: 50%;
+  transition: 0.25s all;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+div.igs-input.igs-focus > line {
+  height: 100%;
+  width: 100%;
+  margin-left: -10px;
+  transition: 0.25s all;
+  position: absolute;
+  border-radius: 5px;
+}
+
+div.igs-input > input {
+  z-index: 2;
+  border-width: 0;
+  border-style: block;
+  height: 24px;
+  width: 100%;
+  margin-top: 26px;
+  text-indent: 5px;
+  z-index: 2;
+  font-size: 12pt;
+}
+
+div.igs-input > input:focus {
+  outline: none;
+}
+
+div.igs-input {
+  position: relative;
+  display: block;
+  border: 3px;
+  height: 50px;
+  margin: 40px 0 40px 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.igs-switch {
+  width: 50px;
+  height: 25px;
+  border-radius: 50px;
+  float: right;
+}
+
+.igs-switch > input {
+  display: none;
+}
+
+.igs-switch-circle {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  border-radius: 100%;
+  transition: 0.25s all;
+}
+
+.igs-switch.igs-active > .igs-switch-circle {
+  margin-left: 25px;
+}
+
+.igs-select:focus {
+  outline: none;
+}
+
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.igs-select > option {
+  display: none;
+}
+
+.igs-select > span {
+  width: 100%;
+  display: block;
+}
+
+.igs-select.igs-select-show > span {
+  display: none;
+}
+
+.igs-select {
+  text-align: center;
+  width: 100px;
+  border-radius: 5px;
+  border-style: none;
+  overflow: hidden;
+  padding: 5px 0 5px 0;
+  display: inline-block;
+}
+
+.igs-select.igs-select-show > option {
+  display: block;
+}
+
+.igs-select.igs-select-show {
+  position: fixed;
+  z-index: 10;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 16pt;
+  margin-left: 20px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 16pt;
+  line-height: 64px;
+  vertical-align: middle;
+  text-indent: 20px;
+  margin: 0;
+}
+
+/*# sourceMappingURL=igs.css.map */

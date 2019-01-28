@@ -1,0 +1,40 @@
+.igs-select:focus{
+    outline: none;
+}
+body{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.igs-select > option{
+    display: none;
+
+}
+.igs-select > span{
+    width: 100%;
+    display:block;
+
+}
+.igs-select.igs-select-show > span{
+display: none; 
+}
+.igs-select{
+    text-align: center;
+    width: 100px;
+    border-radius: 5px;
+    border-style: none;
+    overflow: hidden;
+    padding: 5px 0 5px 0;
+    display: inline-block;
+}
+.igs-select.igs-select-show > option{
+    display: block;
+}
+.igs-select.igs-select-show{
+    position: fixed;
+    z-index: 10;
+
+}

@@ -1,0 +1,13 @@
+
+div.igs-header.igs-active{
+    position: fixed;
+}
+.igs-header{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    width: 100%;
+    transition: .25s all;
+    height: 64px;
+    z-index: 2;
+}

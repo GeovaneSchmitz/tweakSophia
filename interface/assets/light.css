@@ -1,0 +1,191 @@
+body {
+  background-color: #fff;
+}
+
+div.igs-input > span {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+div.igs-input.igs-focus > span {
+  color: #002bff;
+}
+
+div.igs-input.igs-error > input {
+  caret-color: #f00;
+}
+
+div.igs-input.igs-error > span {
+  color: #f00;
+}
+
+div.igs-input, div.igs-input.igs-focus > line {
+  background-color: rgba(0, 43, 255, 0.1);
+}
+
+div.igs-input.igs-error, div.igs-input.igs-focus.igs-error, div.igs-input.igs-focus.igs-error > line {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+button.igs-button1 {
+  background-color: rgba(0, 0, 0, 0);
+  color: #002bff;
+}
+
+button.igs-button1:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.buttons > span {
+  color: #f00;
+}
+
+button.igs-button1:active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+button.igs-button2 {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+button.igs-button2:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+button.igs-button2:active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+button.igs-button3 {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+button.igs-button3:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+button.igs-button3:active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+input {
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: rgba(0, 0, 0, 0.8);
+  caret-color: #002bff;
+}
+
+div.igs-input > input {
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+div.igs-input > input:focus {
+  border-color: rgba(0, 0, 0, 0);
+}
+
+div.igs-appbar {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+div.igs-appbar.igs-active {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  color: #00695e;
+}
+
+div.igs-card1 {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.card-legenda {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+h2 {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+div.igs-card2 {
+  background-color: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#quadro-item1 {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#quadro-item2 {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#quadro-item3 {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.igs-btn-primary {
+  background-color: #002bff;
+  color: #fff;
+}
+
+.igs-btn-primary:hover {
+  background-color: rgba(0, 43, 255, 0.8);
+}
+
+.igs-btn-primary:active {
+  background-color: #0022cc;
+}
+
+.igs-btn-secundary:active {
+  background-color: rgba(0, 43, 255, 0.1);
+}
+
+.igs-btn-secundary {
+  color: #002bff;
+  background-color: #fff;
+}
+
+.igs-active > .igs-switch-circle {
+  background-color: #002bff;
+}
+
+.igs-switch-circle {
+  background-color: gray;
+}
+
+.igs-switch.igs-active {
+  background-color: rgba(0, 43, 255, 0.2);
+}
+
+.igs-switch {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+.igs-select > span {
+  color: #002bff;
+}
+
+.igs-select {
+  background-color: #fff;
+}
+
+.igs-select.igs-select-show {
+  box-shadow: 0px 0px 20px 0px rgba(0, 43, 255, 0.1);
+}
+
+div.igs-card {
+  box-shadow: 0px 0px 20px 0px rgba(0, 43, 255, 0.1);
+  background-color: #fff;
+}
+
+.igs-select.igs-select-show > option:hover, .igs-select.igs-select-show > span:hover {
+  background-color: rgba(0, 43, 255, 0.2);
+  color: #002bff;
+}
+
+.username, .tweak {
+  background-color: #eee;
+}
+
+/*# sourceMappingURL=light.css.map */

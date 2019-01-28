@@ -1,0 +1,58 @@
+div.igs-input > .igs-input-label{
+    font-size: 12pt;
+    position: absolute;
+    line-height: 50px;
+    transition: 0.25s all;
+    margin-left: 2px;
+    text-indent: 5px;
+    z-index: 2;
+}
+div.igs-input.igs-focus > .igs-input-label, div.igs-input.igs-haveValue > .igs-input-label{
+    margin-top: 0;
+    line-height: calc(10pt + 10px);
+    font-size: 10pt;
+}
+
+div.igs-input > line{
+    height: 100%;
+    width: 0;
+    margin-left:50%;
+    transition: 0.25s all;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+
+} 
+div.igs-input.igs-focus > line{
+    height: 100%;
+    width: 100%;
+    margin-left:-10px;
+    transition: 0.25s all;
+    position: absolute;
+    border-radius: 5px;
+} 
+
+div.igs-input > input{
+    z-index: 2;
+    border-width: 0;
+    border-style: block;
+    height: 24px;
+    width: 100%;
+    margin-top:26px;
+    text-indent: 5px;
+    z-index: 2;
+    font-size: 12pt
+}
+div.igs-input > input:focus{
+    outline: none;
+}
+
+div.igs-input{
+    position: relative;
+    display: block;
+    border: 3px;
+    height: 50px;
+    margin:40px 0 40px 0;
+    border-radius: 5px;
+    padding: 10px;
+}
