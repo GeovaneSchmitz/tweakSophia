@@ -4,8 +4,11 @@
   "description": "An Tweak for Sophia",
   "main": "index.js",
   "scripts": {
-    "install": "./sass.sh",
-    "start": "electron ."
+    "prepare": "$(npm bin)/node-sass sass -o interface/assets",
+    "install": "$(npm bin)/node-sass sass -o interface/assets",
+    "start": "electron .",
+    "pack": " $(npm bin)/node-sass sass -o interface/assets && electron-builder --dir",
+    "dist": "electron-builder"
   },
   "author": "GeovaneSchmitz",
   "repository": {
@@ -14,10 +17,11 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "electron": "^4.0.1",
+    "electron-builder": "^20.38.5",
     "electron-packager": "^13.0.1",
     "electron-rebuild": "^1.8.2",
-    "node-sass": "^4.11.0",
-    "electron": "^4.0.1"
+    "node-sass": "^4.11.0"
   },
   "dependencies": {
     "auto-launch": "^5.0.5",

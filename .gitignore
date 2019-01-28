@@ -1,1 +1,4 @@
 node_modules/
+interface/assets/dark.css
+interface/assets/light.css
+interface/assets/igs.css

@@ -1,130 +1,98 @@
 body {
-  background-color: #383838;
-}
+  background-color: #383838; }
 
 div.igs-input > span {
-  color: rgba(255, 255, 255, 0.8);
-}
+  color: rgba(255, 255, 255, 0.8); }
 
 div.igs-input.igs-focus > span {
-  color: #fff;
-}
+  color: #fff; }
 
 div.igs-input.igs-error > input {
-  caret-color: #f00;
-}
+  caret-color: #f00; }
 
 div.igs-input.igs-error > span {
-  color: #f00;
-}
+  color: #f00; }
 
 div.igs-input, div.igs-input.igs-focus > line {
-  background-color: rgba(255, 255, 255, 0.05);
-}
+  background-color: rgba(255, 255, 255, 0.05); }
 
 div.igs-input.igs-error, div.igs-input.igs-focus.igs-error, div.igs-input.igs-focus.igs-error > line {
-  background-color: rgba(255, 0, 0, 0.1);
-}
+  background-color: rgba(255, 0, 0, 0.1); }
 
 button.igs-button1 {
   background-color: rgba(0, 0, 0, 0);
-  color: rgba(0, 42, 255, 0.847);
-}
+  color: rgba(0, 42, 255, 0.847); }
 
 .buttons > span {
-  color: #f00;
-}
+  color: #f00; }
 
 input {
   background-color: rgba(0, 0, 0, 0) !important;
   color: rgba(255, 255, 255, 0.8);
-  caret-color: #002bff;
-}
+  caret-color: #002bff; }
 
 div.igs-input > input {
-  border-color: rgba(0, 0, 0, 0.5);
-}
+  border-color: rgba(0, 0, 0, 0.5); }
 
 div.igs-input > input:focus {
-  border-color: rgba(0, 0, 0, 0);
-}
+  border-color: rgba(0, 0, 0, 0); }
 
 h2 {
-  color: rgba(0, 0, 0, 0.8);
-}
+  color: rgba(0, 0, 0, 0.8); }
 
 .igs-btn-primary {
   background-color: #fff;
-  color: #383838;
-}
+  color: #383838; }
 
 .igs-btn-primary:hover {
-  background-color: rgba(255, 255, 255, 0.8);
-}
+  background-color: rgba(255, 255, 255, 0.8); }
 
 .igs-btn-primary:active {
-  background-color: #e6e6e6;
-}
+  background-color: #e6e6e6; }
 
 .igs-btn-secundary:active {
-  background-color: rgba(0, 42, 255, 0);
-}
+  background-color: rgba(0, 42, 255, 0); }
 
 .igs-btn-secundary {
   color: #fff;
-  background-color: rgba(255, 255, 255, 0.05);
-}
+  background-color: rgba(255, 255, 255, 0.05); }
 
 .igs-active > .igs-switch-circle {
-  background-color: #fff;
-}
+  background-color: #fff; }
 
 .igs-switch-circle {
-  background-color: rgba(255, 255, 255, 0.5);
-}
+  background-color: rgba(255, 255, 255, 0.5); }
 
 .igs-switch.igs-active {
-  background-color: rgba(255, 255, 255, 0.2);
-}
+  background-color: rgba(255, 255, 255, 0.2); }
 
 .igs-switch {
-  background-color: rgba(255, 255, 255, 0.1);
-}
+  background-color: rgba(255, 255, 255, 0.1); }
 
 .igs-select > span {
-  color: rgba(0, 42, 255, 0.847);
-}
+  color: rgba(0, 42, 255, 0.847); }
 
 .igs-select {
   background-color: #fff;
-  color: #333;
-}
+  color: #333; }
 
 .igs-select.igs-select-show {
-  box-shadow: 0px 0px 20px 0px rgba(0, 42, 255, 0);
-}
+  box-shadow: 0px 0px 20px 0px rgba(0, 42, 255, 0); }
 
 div.igs-card {
   box-shadow: 0px 0px 20px 0px rgba(0, 42, 255, 0);
-  background-color: #383838;
-}
+  background-color: #383838; }
 
 .igs-select.igs-select-show > option:hover, .igs-select.igs-select-show > span:hover {
   background-color: rgba(0, 42, 255, 0.047);
-  color: rgba(0, 42, 255, 0.847);
-}
+  color: rgba(0, 42, 255, 0.847); }
 
 .logo-login {
-  filter: invert(0.4) saturate(100) brightness(10);
-}
+  filter: invert(0.4) saturate(100) brightness(10); }
 
 .logo-tweaks {
-  filter: invert(0.4) saturate(100) brightness(10);
-}
+  filter: invert(0.4) saturate(100) brightness(10); }
 
 .username, .tweak {
   background-color: rgba(255, 255, 255, 0.05);
-  color: #fff;
-}
-
-/*# sourceMappingURL=dark.css.map */
+  color: #fff; }
