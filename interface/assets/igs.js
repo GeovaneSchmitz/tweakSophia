@@ -111,9 +111,14 @@ com.geovanems.load = function () {
     }
     function inputsLoad() {
         function inputFocus() {
-            console.log(123)
-            this.classList.add('igs-focus');
-            this.querySelector('input').focus()
+            if(this.tagName == "INPUT"){
+                this.parentElement.classList.add('igs-focus');
+                this.focus()
+            }else{
+                this.classList.add('igs-focus');
+                this.querySelector("input").focus()
+            }
+            
         }
         function inputBlur() {
             this.parentElement.classList.remove('igs-focus');
@@ -151,6 +156,7 @@ com.geovanems.load = function () {
             span.classList.add("igs-input-label")
             var input = element.querySelector('input');
             element.addEventListener("click", inputFocus);
+            input.addEventListener("focus", inputFocus);
             input.addEventListener("blur", inputBlur);
             input.addEventListener("keyup", inputKeyup);
             input.addEventListener("input", inputChange);

@@ -22,7 +22,6 @@ window.addEventListener("DOMContentLoaded", function (event) {
     inputURL.value = url;
     inputUser.value = user;
     inputPass.value = pass;
-    
     if(user !== ""){
         inputUser.parentElement.classList.add("igs-haveValue")
     }
@@ -59,6 +58,8 @@ window.addEventListener("DOMContentLoaded", function (event) {
         daysRenewal.classList.add("days-renewal-close")
 
     }
+    inputUser.focus()
+    inputUser.parentElement.classList.add("igs-focus")
     function optionClick(){
         settings.renewalDays = this.value;
         ipcRenderer.send('set-settings', settings);
@@ -129,6 +130,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
             document.getElementById("contend-login").classList.remove('content-login-disable');
         }
         btnLogin.addEventListener("click", login)
+        btnLogin.classList.remove("btn-login-loading")
 
     })
     
@@ -148,6 +150,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
             }
             if(!error){
                 btnLogin.removeEventListener("click", login)
+                btnLogin.classList.add("btn-login-loading")
 
                 ipcRenderer.send('login', { user:inputUser.value, pass: inputPass.value, url:inputURL.value})
             }

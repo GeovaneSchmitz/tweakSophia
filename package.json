@@ -1,14 +1,12 @@
 {
   "name": "tweaksophia",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An Tweak for Sophia",
   "main": "index.js",
   "scripts": {
     "prepare": "$(npm bin)/node-sass sass -o interface/assets",
-    "install": "$(npm bin)/node-sass sass -o interface/assets",
     "start": "electron .",
-    "pack": " $(npm bin)/node-sass sass -o interface/assets && electron-builder --dir",
-    "dist": "electron-builder"
+    "build": "build.js"
   },
   "author": "GeovaneSchmitz",
   "repository": {
@@ -21,6 +19,7 @@
     "electron-builder": "^20.38.5",
     "electron-packager": "^13.0.1",
     "electron-rebuild": "^1.8.2",
+    "electron-winstaller": "^2.7.0",
     "node-sass": "^4.11.0"
   },
   "dependencies": {

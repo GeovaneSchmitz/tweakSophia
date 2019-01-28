@@ -117,7 +117,7 @@ class Sophia {
       }
     })
     this[_win].loadURL(this.baseURL)
-    this[_win].webContents.openDevTools()
+    //this[_win].webContents.openDevTools()
     var self = this
     this[_win].webContents.on("did-fail-load", function() {
       self[_win].loadURL(self.baseURL)

@@ -94,3 +94,30 @@ body{
 
     margin-top: 60px;
 }
+
+@keyframes spinning {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+.icon-loading{
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 1px 0 0 -27px;
+    position: absolute;
+    background: url("img/loading.svg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    animation: spinning 1s linear infinite;
+    display: none;
+}
+.btn-login-loading{
+    padding: 7px 15px 7px 42px !important;
+}
+.btn-login-loading > div.icon-loading{
+    display: block;
+}

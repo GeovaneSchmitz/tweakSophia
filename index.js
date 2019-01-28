@@ -58,15 +58,17 @@ app.on('ready', function () {
 function createWin() {
   let { width, height } = store.get('windowBounds');
   let { themeDark } = store.get('settings');
-  
+  let ext = (process.platform === "win32")? ".ico":".png";
+
   mainWindow = new BrowserWindow({
-    icon: "./interface/assets/img/app.png",
+    icon: "./interface/assets/img/app" + ext,
     width: width, height: height,
     backgroundColor:themeDark?"#383838":"#fff",
     webPreferences: {
       nodeIntegration: true,
     }
   })
+  //mainWindow.webContents.openDevTools()
   mainWindow.setMenu(null);
   mainWindow.on('resize', () => {
     let { width, height } = mainWindow.getBounds();
