@@ -7,7 +7,11 @@
     "install": "./sass.sh",
     "start": "electron ."
   },
-  "author": "",
+  "author": "GeovaneSchmitz",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GeovaneSchmitz/tweakSophia.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "electron-packager": "^13.0.1",
