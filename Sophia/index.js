@@ -107,7 +107,7 @@ class Sophia {
 
   [_createWin]() {
     this[_win] = new BrowserWindow({
-      width: 800,
+      width: 1024,
       height: 600,
       show: false,
 
@@ -229,7 +229,7 @@ class Sophia {
       }
     }
     loop()
-    setInterval(loop, 30000)
+    setInterval(loop, 3600000)
   }
 }
 

@@ -3,7 +3,7 @@ var AutoLaunch = require('auto-launch');
 var autolauncher;
 let auto = []
 auto.isAutorun = function(app) {
-    if(process.argv[2] == "autorun"){
+    if(process.argv.indexOf("--hidden") > -1){
         return true
     }else{
         return false
@@ -13,6 +13,7 @@ auto.isAutorun = function(app) {
 auto.init = function(){
     autolauncher = new AutoLaunch({
         name: 'Sophia',
+        isHidden:true
     });
 }
 auto.set = function(state){

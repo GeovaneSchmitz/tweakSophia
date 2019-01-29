@@ -3,7 +3,6 @@ const tray = require('./tray')
 const Sophia = require("./Sophia")
 const Store = require('./libs/store')
 const autorun = require('./autorun')
-require('update-electron-app')()
 autorun.init()
 let mainWindow;
 
@@ -36,7 +35,6 @@ autorun.set(store.get('settings').autoLaunch)
 sophiaData.eventName = "Sophia"
 const sophia = new Sophia(sophiaData);
 ipcMain.on(sophia.eventName, sophia.event)
-
 app.on('ready', function () {
   if (!autorun.isAutorun()) {
     createWin()
@@ -49,6 +47,7 @@ app.on('ready', function () {
       mainWindow.focus();
     }
   })
+  
 
   sophia.bookRenewal()
 })
@@ -59,7 +58,6 @@ function createWin() {
   let { width, height } = store.get('windowBounds');
   let { themeDark } = store.get('settings');
   let ext = (process.platform === "win32")? ".ico":".png";
-
   mainWindow = new BrowserWindow({
     icon: "./interface/assets/img/app" + ext,
     width: width, height: height,
@@ -69,6 +67,7 @@ function createWin() {
     }
   })
   //mainWindow.webContents.openDevTools()
+
   mainWindow.setMenu(null);
   mainWindow.on('resize', () => {
     let { width, height } = mainWindow.getBounds();
@@ -134,8 +133,4 @@ ipcMain.on('login', function (event, account) {
 
 
 app.on('window-all-closed', () => {
-
-  if (process.platform !== 'darwin') {
-    app.quit()
-  }
 })
