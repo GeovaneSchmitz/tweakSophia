@@ -6,11 +6,11 @@ DISCLAIMER
 Este aplicativo não é oficial. Ele não é apoiado por SophiA.
  
 ## Recursos
-Renova automaticamente livros, sob demanda, faltando X dias para a data de entrega. Você pode escolher entre 1, 3, 5, 10 dias.
-Verifica os livros a cada 1h 
-Inicia automaticamente com o computador
-Ícone na tray do sistema
-Tema escuro
+* Renova automaticamente livros, sob demanda, faltando X dias para a data de entrega. Você pode escolher entre 1, 3, 5, 10 dias.
+* Verifica os livros a cada 1h 
+* Inicia automaticamente com o computador
+* Ícone na tray do sistema
+* Tema escuro
 ## Download
 [Releases](/releases)
 
