@@ -12,7 +12,11 @@ Este aplicativo não é oficial. Ele não é apoiado por SophiA.
 * Ícone na tray do sistema
 * Tema escuro
 ## Download
+<<<<<<< HEAD
+[Releases](https://github.com/GeovaneSchmitz/tweakSophia/releases)
+=======
 [Releases](/releases)
+>>>>>>> 70ee2d3434bf495c7dacdc85c21e356a9c0636c1
 
 ## Install
 Dependências npm e nodejs
@@ -28,4 +32,8 @@ npm run dist
 ```
 
 ## Screenshot
+<<<<<<< HEAD
+<img src="https://github.com/GeovaneSchmitz/tweakSophia/blob/master/screenshot.png"  width="60%">
+=======
 <img src="https://github.com/GeovaneSchmitz/tweakSophia/blob/master/screenshot1.png"  width="60%">
+>>>>>>> 70ee2d3434bf495c7dacdc85c21e356a9c0636c1
