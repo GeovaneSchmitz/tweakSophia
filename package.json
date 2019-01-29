@@ -1,9 +1,46 @@
 {
   "name": "tweaksophia",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "An Tweak for Sophia",
   "main": "index.js",
-  
+  "build": {
+    "productName": "TweakSophia",
+    "appId": "br.com.geovanems.tweaksophia",
+    "win": {
+      "icon": "interface/assets/img/app.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "license": "LICENSE",
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false,
+      "perMachine": true,
+      "installerIcon": "interface/assets/img/app.ico",
+      "uninstallerIcon": "interface/assets/img/app.ico"
+    },
+    "linux": {
+      "icon": "interface/assets/img/app@8x.png",
+      "target": [
+        {
+          "target": "appImage",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "appImage": {
+      "license": "LICENSE",
+      "category": "Utility"
+    }
+  },
   "scripts": {
     "prepare": "$(npm bin)/node-sass sass -o interface/assets",
     "start": "electron .",
@@ -11,12 +48,12 @@
     "dist": "$(npm bin)/electron-builder",
     "postinstall": "$(npm bin)/electron-builder install-app-deps"
   },
-  "author": "GeovaneSchmitz",
+  "author": "GeovaneSchmitz <contato@geovanems.com.br>",
   "repository": {
     "type": "git",
     "url": "https://github.com/GeovaneSchmitz/tweakSophia.git"
   },
-  "license": "ISC",
+  "license": "SEE LICENSE FILE",
   "devDependencies": {
     "electron": "^4.0.1",
     "electron-builder": "^20.38.5",
