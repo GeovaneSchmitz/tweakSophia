@@ -1,38 +1,37 @@
 {
   "name": "tweaksophia",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "An Tweak for Sophia",
   "main": "index.js",
   "build": {
     "productName": "TweakSophia",
     "appId": "br.com.geovanems.tweaksophia",
     "win": {
-      "icon": "icons/app.ico"
+      "icon": "icons/windows/app.ico"
     },
-    "mac":{
-      "category":"public.app-category.utilities",
-      "icon": "icons/app.icns"
+    "mac": {
+      "category": "public.app-category.utilities",
+      "icon": "icons/mac/app.icns"
     },
     "nsis": {
       "license": "LICENSE",
       "allowToChangeInstallationDirectory": true,
       "oneClick": false,
       "perMachine": true,
-      "installerIcon": "icons/app.ico",
-      "uninstallerIcon": "icons/app.ico"
+      "installerIcon": "icons/windows/app.ico",
+      "uninstallerIcon": "icons/windows/app.ico"
     },
     "linux": {
-      "icon": "icons/256x256.png",
+      "icon": "icons/linux/app",
       "category": "Utility",
-      "desktop":{
-        "Name":"Tweak Sophia",
-        "Icon":"tweak-sophia",
-        "Type":"Application",
-        "Categories":"Utility;"
+      "desktop": {
+        "Name": "Tweak Sophia",
+        "Icon": "tweak-sophia",
+        "Type": "Application",
+        "Categories": "Utility;"
       },
-      "executableName":"tweak-sophia"  
+      "executableName": "tweak-sophia"
     }
-    
   },
   "scripts": {
     "prepare": "$(npm bin)/node-sass sass -o interface/assets",
