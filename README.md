@@ -14,7 +14,7 @@ Este aplicativo não é oficial. Ele não é apoiado por SophiA.
 ## Download
 [Releases](https://github.com/GeovaneSchmitz/tweakSophia/releases)
 
-## Install
+## Run
 Dependências npm e nodejs
 ```
 npm install
