@@ -14,12 +14,16 @@ Este aplicativo não é oficial. Ele não é apoiado por SophiA.
 ## Download
 [Releases](https://github.com/GeovaneSchmitz/tweakSophia/releases)
 
-## Run
+## Install
 Dependências npm e nodejs
 ```
 npm install
+```
+## Run
+```
 npm start
 ```
+
 ##  Building binaries
 Dependências npm e nodejs
 ```
