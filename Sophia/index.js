@@ -203,8 +203,10 @@ class Sophia {
     function loop() {
       if(self.user && self.pass && self.settings.renewalStatus && self[_updateUser]){
         self.init().then(function(){
+          task.add(self.timeout)
           onEvent.once(self[_exec]('isLogged'), function (event, isLogged) {
             if (isLogged) {
+              task.add(self.timeout)
               onEvent.once(self[_exec]('bookRenewal'), function (event, data) {
                 if (data) {
                   console.log('livros Renovados')
@@ -213,6 +215,7 @@ class Sophia {
             } else {
               self.login().then(function (data) {
                 if(data[0]){
+                  task.add(self.timeout)
                   onEvent.once(self[_exec]('bookRenewal'), function (event, data) {
                     if (data) {
                       console.log('livros Renovados')
