@@ -1,9 +1,8 @@
 
 
 const { BrowserWindow } = require('electron')
-const fs = require('fs');
-const onEvent = require('./libs/onEvent.js')
-const task = require('./libs/task.js')
+const onEvent = require('./onEvent')
+const task = require('./task')
 const path = require('path')
 const uuid = require('uuid/v4')
 
@@ -113,7 +112,7 @@ class Sophia {
 
       webPreferences: {
         nodeIntegration: false,
-        preload: path.join(__dirname, 'libs/preload.js')
+        preload: path.join(__dirname, 'preload.js')
       }
     })
     this[_win].loadURL(this.baseURL)

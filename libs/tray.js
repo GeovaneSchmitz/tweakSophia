@@ -11,8 +11,9 @@ var contextMenu;
 
 trayModule.init = function(app, cb){
     let ext = (process.platform === "win32")? ".ico":".png";
+    let icon = (process.platform === "linux")? "tray@5x":"tray";
 
-    tray = new Tray(path.join(__dirname,  'interface/assets/img/tray' + ext))
+    tray = new Tray(path.join(__dirname, '../icons/' + icon + ext))
 
     contextMenu = Menu.buildFromTemplate([
         { label: "Mostrar", click:cb},

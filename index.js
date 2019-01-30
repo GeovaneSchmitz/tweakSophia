@@ -1,8 +1,8 @@
 const { app, BrowserWindow, ipcMain } = require('electron')
-const tray = require('./tray')
-const Sophia = require("./Sophia")
+const tray = require('./libs/tray')
+const Sophia = require("./libs/sophia")
 const Store = require('./libs/store')
-const autorun = require('./autorun')
+const autorun = require('./libs/autorun')
 autorun.init()
 let mainWindow;
 
@@ -58,8 +58,10 @@ function createWin() {
   let { width, height } = store.get('windowBounds');
   let { themeDark } = store.get('settings');
   let ext = (process.platform === "win32")? ".ico":".png";
+  let icon = (process.platform === "linux")? "app@8x":"app";
+
   mainWindow = new BrowserWindow({
-    icon: "./interface/assets/img/app" + ext,
+    icon: "./icons/"+ icon + ext,
     width: width, height: height,
     backgroundColor:themeDark?"#383838":"#fff",
     webPreferences: {
@@ -74,7 +76,7 @@ function createWin() {
     store.set('windowBounds', { width, height });
   });
 
-  mainWindow.loadFile('interface/index.html')
+  mainWindow.loadFile('renderer/index.html')
 
   mainWindow.on('closed', () => {
 

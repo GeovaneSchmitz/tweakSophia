@@ -1,6 +1,6 @@
 node_modules/
-interface/assets/dark.css
-interface/assets/light.css
-interface/assets/igs.css
+renderer/assets/dark.css
+renderer/assets/light.css
+renderer/assets/igs.css
 dist/
 build

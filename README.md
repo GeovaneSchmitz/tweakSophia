@@ -11,25 +11,48 @@ Este aplicativo não é oficial. Ele não é apoiado por SophiA.
 * Inicia automaticamente com o computador
 * Ícone na tray do sistema
 * Tema escuro
+
 ## Download
 [Releases](https://github.com/GeovaneSchmitz/tweakSophia/releases)
 
-## Install
-Dependências npm e nodejs
-```
-npm install
-```
-## Run
-```
-npm start
-```
-
 ##  Building binaries
-Dependências npm e nodejs
+* Dependências `npm` e `nodejs`
+* dependencies `npm` and `nodejs`
+
+### Linux
+* Snap e AppImage não funciona a inicialização
+* O pacote ficará em dist/
+* Snap and AppImage not work startup
+* The package file will be written to the dist/
+
+#### .deb (Ubuntu, Debian, Elementary OS, Linux Mint, Deepin)
+
 ```
 npm install
-npm run dist
+$(npm bin)/electron-builder --linux deb
 ```
 
+#### .rpm (Fedora, openSUSE, RHEL)
+
+```
+npm install
+$(npm bin)/electron-builder --linux rpm
+```
+
+#### Pacman (Arch Linux, Manjaro)
+
+```
+npm install
+$(npm bin)/electron-builder --linux pacman
+```
+
+### Windows
+
+```
+npm install
+$(npm bin)/electron-builder --windows 
+```
+O instalador ficará em dist/
+The installer file will be written to the dist/
 ## Screenshot
 <img src="https://github.com/GeovaneSchmitz/tweakSophia/blob/master/screenshot.png"  width="60%">
