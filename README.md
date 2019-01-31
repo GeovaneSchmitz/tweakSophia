@@ -55,4 +55,4 @@ $(npm bin)/electron-builder --windows
 * O instalador ficará em dist/
 * The installer file will be written to the dist/
 ## Screenshot
-<img src="https://github.com/GeovaneSchmitz/tweakSophia/blob/master/screenshot.png"  width="60%">
+<img src="https://github.com/GeovaneSchmitz/tweakSophia/blob/master/screenshot.svg"  width="100%">
